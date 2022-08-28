@@ -102,3 +102,11 @@ GET /search?_page=7&_limit=20
 ```
 
 By default ALL matching results are returned
+
+
+## Nice to haves
+
+- Implement a component library such as Semantic UI to stylize the [cards](https://react.semantic-ui.com/views/card/).
+- Implement field and _like search in the UI
+- Add unit and integration tests
+- Show more than 10 results with pagination
