@@ -1,0 +1,28 @@
+input {
+    margin: 10px;
+    font-size: calc(10px + 2vmin);
+    border-radius: 6px;
+    border: 2px solid lightgray;
+    width: calc(40vw);
+    position: relative;
+    padding-left: 5px;
+}
+
+.clear {
+    transform: rotate(45deg);
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 3px;
+    color: darkslategray;
+    cursor: pointer;
+    width: 0;
+}
+
+.counter {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: small;
+    cursor: pointer;
+}
