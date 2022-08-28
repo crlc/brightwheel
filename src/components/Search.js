@@ -45,8 +45,10 @@ const Search = () => {
     return (
         <section>
             <div className="counter" onClick={clickCount}>Total Starred: {count}</div>
-            <input type="text" placeholder="Search.." value={value} onChange={handleChange} />
-            {value && <div className="clear" onClick={clear}>+</div>}
+            <div className="relative">
+                <input type="text" placeholder="Search.." value={value} onChange={handleChange} />
+                {value && <div className="clear" onClick={clear}>+</div>}
+            </div>
             <div>{searching ? "Searching..." : value && results.length === 0 && "No results..."}</div>
             {results.map((row, index) => <Card key={`card-${row.id}`} {...row} index={index} updateStarred={updateStarred} />)}
         </section>
